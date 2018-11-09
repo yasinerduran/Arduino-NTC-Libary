@@ -2,14 +2,27 @@
 
 /*0-> 2200K NTC Temperature Table*/
 
-NTC :: NTC(int pin_ , float seriesResistor_ = 10000){
+NTC :: NTC(int pin_ ){
     pin = pin_;
-    seriesResistor = seriesResistor_;
+    series_resistor = 10000;
 }
+
+
+NTC :: NTC(int pin_ , float series_resistor_){
+    pin = pin_;
+    series_resistor = series_resistor_;
+}
+
 
 NTC ::~NTC(){
 
 }
+
+
+void  NTC :: setSeriesResistor(float series_resistor_){
+    series_resistor = series_resistor_;
+}
+
 
 float  NTC :: measureTemperature(int sample_count = 10){
     float average_temperature = 0;
@@ -33,12 +46,11 @@ float  NTC :: measureResist(int sample_count = 10){
 }
 
 
-
 float NTC :: calculateResistance(){
     float reading = analogRead(pin);
     // convert the value to resistance
     reading = (1023 / reading)  - 1;     // (1023/ADC - 1) 
-    return (seriesResistor / reading);
+    return (series_resistor / reading);
 }
 
 float NTC ::  resistToTemp(float resistance){
