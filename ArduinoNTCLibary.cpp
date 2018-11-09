@@ -4,6 +4,7 @@
 NTC :: NTC(int pin_ ){
     pin = pin_;
     series_resistor = 10000;
+    
 }
 
 
