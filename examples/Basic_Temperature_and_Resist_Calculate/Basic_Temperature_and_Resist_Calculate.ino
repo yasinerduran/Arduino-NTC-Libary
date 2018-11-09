@@ -1,9 +1,5 @@
 #include "ArduinoNTCLibary.h"
 
-// A0 Baglı olan pini temsil ediyor,
-// Elimde 1 tane ntc oldugu için hepsi A0 yoksa A1,A2 
-// Şeklinde devam edicek 
-
 NTC termistor_1(A0);
 
 void setup()
