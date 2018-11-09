@@ -1,10 +1,12 @@
 
 #define ArduinoNTCLibary_H
 #include <Arduino.h>
+
 class NTC{
     private:
         float series_resistor;
         int pin;
+        double * ntc_table [][2];
 
     public:
         NTC(int pin);
@@ -20,4 +22,6 @@ class NTC{
 };
 
 //NTC Tables 
+
+/*0-> 2200K NTC Temperature Table*/
 #include "NtcTables/2K2Tables.h"

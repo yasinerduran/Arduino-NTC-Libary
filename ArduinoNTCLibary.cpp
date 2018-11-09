@@ -1,6 +1,5 @@
 #include "ArduinoNTCLibary.h"
 
-/*0-> 2200K NTC Temperature Table*/
 
 NTC :: NTC(int pin_ ){
     pin = pin_;
