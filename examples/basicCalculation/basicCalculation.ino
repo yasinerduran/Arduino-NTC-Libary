@@ -3,19 +3,20 @@ NTC termistor_1 = NTC();
 
 
 void setup(){
-
+    Serial.begin(9600);
     termistor_1.setNTCPin(A0);
     termistor_1.setSupplyPin(A7);
     termistor_1.setReferanceResistance(9999);
     termistor_1.setReferanceBetaConfidency(3927.0);
     termistor_1.setReferanceResistanceAt25C(2248.0);
     termistor_1.setReferanceMaxVoltageOfADC(4.60);
-    termistor_1.setReferanceMaxADC(1024.00);
-
+    termistor_1.setReferanceMaxADC(1024.00)
 }
 
 void loop(){
-    int sample_count = 10;
+    int sample_count = 100;
+
+
     Serial.print("NTC Voltage >> ");
     Serial.print(termistor_1.measureNTCVoltage());
     Serial.print(" >> Sampled >>");
@@ -31,5 +32,6 @@ void loop(){
     Serial.print(" >> Sampled >>");
     Serial.println(termistor_1.measureNTCTemperatureCelcius(sample_count));
 
-    Serial.println("-----------------------------------------------------------------");
+    Serial.println("------------------------------------------------");
+    delay(1000);
 }
