@@ -2,5 +2,5 @@
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
     "port": "COM11",
-    "sketch": "examples\\Basic_Temperature_and_Resist_Calculate\\Basic_Temperature_and_Resist_Calculate.ino"
+    "sketch": "examples\\basicCalculation\\basicCalculation.ino"
 }
