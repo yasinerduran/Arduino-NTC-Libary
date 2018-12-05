@@ -10,8 +10,8 @@ void setup(){
     termistor_1.setNTCPin(A0);
     termistor_1.setSupplyPin(A7);
     termistor_1.setReferanceResistance(9999);
-    termistor_1.setReferanceBetaConfidency(3927.0);
-    termistor_1.setReferanceResistanceAt25C(2248.0);
+    termistor_1.setReferanceBetaConfidency(3976.0);
+    termistor_1.setReferanceResistanceAt25C(2252.0);
     termistor_1.setReferanceMaxVoltageOfADC(4.60);
     termistor_1.setReferanceMaxADC(1024.00);
 
@@ -19,8 +19,8 @@ void setup(){
     termistor_2.setNTCPin(A1);
     termistor_2.setSupplyPin(A7);
     termistor_2.setReferanceResistance(9999);
-    termistor_2.setReferanceBetaConfidency(3927.0);
-    termistor_2.setReferanceResistanceAt25C(2248.0);
+    termistor_2.setReferanceBetaConfidency(3976.0);
+    termistor_2.setReferanceResistanceAt25C(2252.0);
     termistor_2.setReferanceMaxVoltageOfADC(4.60);
     termistor_2.setReferanceMaxADC(1024.00);
 
@@ -28,8 +28,8 @@ void setup(){
     termistor_3.setNTCPin(A2);
     termistor_3.setSupplyPin(A7);
     termistor_3.setReferanceResistance(9999);
-    termistor_3.setReferanceBetaConfidency(3927.0);
-    termistor_3.setReferanceResistanceAt25C(2248.0);
+    termistor_3.setReferanceBetaConfidency(3976.0);
+    termistor_3.setReferanceResistanceAt25C(2252.0);
     termistor_3.setReferanceMaxVoltageOfADC(4.60);
     termistor_3.setReferanceMaxADC(1024.00);
 
@@ -37,8 +37,8 @@ void setup(){
     termistor_4.setNTCPin(A3);
     termistor_4.setSupplyPin(A7);
     termistor_4.setReferanceResistance(9999);
-    termistor_4.setReferanceBetaConfidency(3927.0);
-    termistor_4.setReferanceResistanceAt25C(2248.0);
+    termistor_4.setReferanceBetaConfidency(3976.0);
+    termistor_4.setReferanceResistanceAt25C(2252.0);
     termistor_4.setReferanceMaxVoltageOfADC(4.60);
     termistor_4.setReferanceMaxADC(1024.00);
 }
