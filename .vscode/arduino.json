@@ -2,5 +2,5 @@
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
     "port": "COM16",
-    "sketch": "examples\\basicCalculation\\basicCalculation.ino"
+    "sketch": "examples\\fourProbeMeasuringForNextion\\fourProbeMeasuringForNextion.ino"
 }

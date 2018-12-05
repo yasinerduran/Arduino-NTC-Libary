@@ -24,6 +24,7 @@ class NTC{
 
         //Pin of Probe Control
         void setNTCControlPin(int _pin);
+        bool getNTCStatus();
 
         //Series resistance's methods
         void setReferanceResistance(float _resistance);

@@ -18,7 +18,15 @@ void NTC :: setSupplyPin(int _pin){
 
 //Pin of Probe Control
 void NTC :: setNTCControlPin(int _pin){
+    ntc_control_pin = _pin;
+    pinMode(ntc_control_pin,INPUT);
+}
 
+bool NTC :: getNTCStatus(){
+    if(digitalRead(ntc_control_pin)){
+        return true;
+    }
+    return false;
 }
 
 //Series resistance's methods

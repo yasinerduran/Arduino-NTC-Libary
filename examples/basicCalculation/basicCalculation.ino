@@ -10,7 +10,7 @@ void setup(){
     termistor_1.setReferanceBetaConfidency(3927.0);
     termistor_1.setReferanceResistanceAt25C(2248.0);
     termistor_1.setReferanceMaxVoltageOfADC(4.60);
-    termistor_1.setReferanceMaxADC(1024.00)
+    termistor_1.setReferanceMaxADC(1024.00);
 }
 
 void loop(){
