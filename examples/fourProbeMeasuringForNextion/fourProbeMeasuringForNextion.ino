@@ -55,12 +55,12 @@ void loop(){
     printDecimal("n3", termistor_2_temperature);
 
     float termistor_3_temperature = termistor_3.measureNTCTemperatureCelcius(sample_count); 
-    printInteger("n2", termistor_3_temperature);
-    printDecimal("n3", termistor_3_temperature);
+    printInteger("n4", termistor_3_temperature);
+    printDecimal("n5", termistor_3_temperature);
     
     float termistor_4_temperature = termistor_4.measureNTCTemperatureCelcius(sample_count); 
-    printInteger("n4", termistor_4_temperature);
-    printDecimal("n5", termistor_4_temperature);
+    printInteger("n6", termistor_4_temperature);
+    printDecimal("n7", termistor_4_temperature);
 
     delay(200);
 }
