@@ -2,6 +2,8 @@
     "files.associations": {
         "initializer_list": "cpp",
         "xmemory0": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "system_error": "cpp",
+        "xtr1common": "cpp"
     }
 }

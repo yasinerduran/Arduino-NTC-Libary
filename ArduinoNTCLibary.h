@@ -23,7 +23,6 @@ class NTC{
         void setSupplyPin(int _pin);
 
         //Pin of Probe Control
-        void setNTCControlPin(int _pin);
         bool getNTCStatus();
 
         //Series resistance's methods

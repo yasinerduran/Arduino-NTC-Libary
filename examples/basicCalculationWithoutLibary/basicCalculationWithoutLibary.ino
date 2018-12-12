@@ -46,7 +46,7 @@ void loop()
 
     ntc_temperature -= 273.15f;
     Serial.print("NTC Temperature Celcius => ");
-    Serial.println(ntc_temperature);
+    Serial.println(ntc_temperature); 
     delay(1000);
 
 
