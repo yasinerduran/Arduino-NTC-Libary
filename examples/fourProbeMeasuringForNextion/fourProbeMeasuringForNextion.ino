@@ -40,7 +40,7 @@ void setup(){
 }
 
 void loop(){
-    int sample_count = 100;
+    int sample_count = 10;
     if(termistor_1.getNTCStatus()){
         printProbeStatus("va1", 1);
         float termistor_1_temperature = termistor_1.measureNTCTemperatureCelcius(sample_count); 
@@ -80,7 +80,7 @@ void loop(){
     else{
         printProbeStatus("va4", 0);
     }
-    delay(200);
+    delay(1000);
 }
 
 void printInteger(String item, double temperature_){
