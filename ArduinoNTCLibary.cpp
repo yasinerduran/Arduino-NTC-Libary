@@ -10,11 +10,6 @@ void NTC :: setNTCPin(int _pin){
     pinMode(ntc_pin,INPUT);
 }
 
-void NTC :: setSupplyPin(int _pin){
-    adc_supply_output_pin = _pin;
-    pinMode(adc_supply_output_pin, OUTPUT);
-    digitalWrite(adc_supply_output_pin,HIGH);
-}
 
 //Pin of Probe Control
 
@@ -74,7 +69,6 @@ float NTC :: getReferanceResistanceAt25C(){
 
 //
 float NTC :: measureNTCVoltage(){
-    digitalWrite(adc_supply_output_pin,HIGH);
     float voltage = analogRead(ntc_pin);
     voltage = (ref_max_voltage * voltage) / ref_max_adc;
     return voltage;

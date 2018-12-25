@@ -5,7 +5,6 @@ NTC termistor_1 = NTC();
 void setup(){
     Serial.begin(9600);
     termistor_1.setNTCPin(A0);
-    termistor_1.setSupplyPin(A7);
     termistor_1.setReferanceResistance(9999);
     termistor_1.setReferanceBetaConfidency(3927.0);
     termistor_1.setReferanceResistanceAt25C(2248.0);

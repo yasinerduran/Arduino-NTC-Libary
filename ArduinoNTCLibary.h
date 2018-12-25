@@ -20,7 +20,6 @@ class NTC{
         NTC();
         //Pin Outs and Inputs
         void setNTCPin(int _pin);
-        void setSupplyPin(int _pin);
 
         //Pin of Probe Control
         bool getNTCStatus();
