@@ -10,16 +10,14 @@ __Connection Schematic:__
 
 __Using:__
 * Import Libary
-
-  * `#include "ArduinoNTCLibary.h"`
-```c
-```
+   ```c
+     #include "ArduinoNTCLibary.h"
+   ```
 * Construct Object
-  * `NTC termistor_1 = NTC();`
-  ```c
-  ```
-* Configure NTC's params
-  *  
+   ```c
+   NTC termistor_1 = NTC();`
+   ```
+* Configure NTC's params 
   ```c
     termistor_1.setNTCPin(A0);
     termistor_1.setReferanceResistance(10000);
