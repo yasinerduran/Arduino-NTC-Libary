@@ -32,6 +32,17 @@ __Using:__
       termistor_1.measureNTCVoltage() // This method gets pin of input's voltage value.
       termistor_1.measureNTCVoltage(10) // Sampled instance method.  
    ```
+   * Resistance Measuring :
+   ```c
+      termistor_1.measureNTCResistance() // This method gets NTC's Reistance value with calculating voltage.
+      termistor_1.measureNTCResistance(10) // Sampled instance method.  
+   ```
+   * Temperature Measuring :
+   ```c
+      termistor_1.measureNTCTemperatureCelcius() // This method calculates NTC's Temperature value with calculating voltage and resitance.
+      termistor_1.measureNTCTemperatureCelcius(10) // Sampled instance method.  
+      termistor_1.measureNTCTemperature() // Fahrenait version
+   ```
            
          
 
