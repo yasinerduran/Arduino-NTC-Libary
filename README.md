@@ -10,10 +10,12 @@ __Connection Schematic:__
 
 __Using:__
 * Import Libary
+
   * `#include "ArduinoNTCLibary.h"`
 ```c
 ```
 * Construct Object
+  * 'NTC termistor_1 = NTC();'
 * Measuring
 
            
