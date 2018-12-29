@@ -19,14 +19,15 @@ __Using:__
   ```c
   ```
 * Configure NTC's params
-  *  ```
+  *  
+  ```c
     termistor_1.setNTCPin(A0);
     termistor_1.setReferanceResistance(10000);
     termistor_1.setReferanceBetaConfidency(3900.0);
     termistor_1.setReferanceResistanceAt25C(2250.0);
     termistor_1.setReferanceMaxVoltageOfADC(4.60);
     termistor_1.setReferanceMaxADC(1024.00);
-     ```
+  ```
  
            
          
