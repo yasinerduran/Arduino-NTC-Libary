@@ -9,9 +9,8 @@ __Connection Schematic:__
 
 
 Using:
-Markup : * Iclude Libary
-Markup :  `code()`
-#include "ArduinoNTCLibary.h"
-Markup : ```C++
-          * Bullet list item 2
+Markup : 1. Iclude Libary
+         2. Construct Object
+         
+
 
