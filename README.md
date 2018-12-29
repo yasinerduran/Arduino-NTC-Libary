@@ -9,8 +9,8 @@ __Connection Schematic:__
 
 
 __Using:__
-
-`#include "ArduinoNTCLibary.h"`
+* Import Libary
+` #include "ArduinoNTCLibary.h" `
 ```c++
 ```
 * Construct Object
