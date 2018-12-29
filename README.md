@@ -16,6 +16,8 @@ __Using:__
 ```
 * Construct Object
   * 'NTC termistor_1 = NTC();'
+  ```c
+  ```
 * Measuring
 
            
