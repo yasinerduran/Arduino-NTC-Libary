@@ -19,12 +19,12 @@ __Using:__
 ```
 * Configure NTC's params 
 ```c
-      termistor_1.setNTCPin(A0);
-      termistor_1.setReferanceResistance(10000);
-      termistor_1.setReferanceBetaConfidency(3900.0);
-      termistor_1.setReferanceResistanceAt25C(2250.0);
-      termistor_1.setReferanceMaxVoltageOfADC(4.60);
-      termistor_1.setReferanceMaxADC(1024.00);
+      termistor_1.setNTCPin(A0); // Input sensor pin.
+      termistor_1.setReferanceResistance(10000); // Referance resistance value
+      termistor_1.setReferanceBetaConfidency(3900.0); // Can calculate with paper.
+      termistor_1.setReferanceResistanceAt25C(2250.0); // Can find datasheet of NTC.
+      termistor_1.setReferanceMaxVoltageOfADC(4.60); // ADC's supply voltage. Measure 5V pin.  
+      termistor_1.setReferanceMaxADC(1024.00); // ADC reding bit value. 
 ```
  
            
