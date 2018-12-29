@@ -12,9 +12,9 @@ __Using:__
 * Iclude Libary
 * Construct Object
 * Measuring
-         * Voltage
-         * Resist
-         * Temperature
+ * Voltage
+ * Resist
+ * Temperature
          
 
 
