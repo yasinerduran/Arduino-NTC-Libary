@@ -9,10 +9,11 @@ __Connection Schematic:__
 
 
 __Using:__
-> __Iclude Libary__
-> __Construct Object__
-> __Measuring__
->> `#include "ArduinoNTCLibary.h"`
+* Iclude Libary
+* Construct Object
+* Measuring
+ - - - - 
+`#include "ArduinoNTCLibary.h"`
            
          
 
