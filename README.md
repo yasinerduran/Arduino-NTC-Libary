@@ -8,9 +8,13 @@ __Connection Schematic:__
 ![Connection Wiring](https://raw.githubusercontent.com/yasinerduran/ArduinoNTCLibary/master/schematics/schematic.PNG)
 
 
-Using:
+__Using:__
 * Iclude Libary
 * Construct Object
+* Measuring
+         * Voltage
+         * Resist
+         * Temperature
          
 
 
