@@ -39,7 +39,8 @@ __Using:__
    ```
    * Temperature Measuring :
    ```c
-      termistor_1.measureNTCTemperatureCelcius() // NTC's Temperature's value calculates with voltage and resitance.
+      termistor_1.measureNTCTemperatureCelcius()   // NTC's Temperature's value calculates with 
+                                                   // voltage and resitance.
       termistor_1.measureNTCTemperatureCelcius(10) // Sampled instance method.  
       termistor_1.measureNTCTemperature() // Fahrenait version
    ```
