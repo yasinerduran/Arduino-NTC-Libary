@@ -35,15 +35,15 @@ __Using:__
    ```
    * Resistance Measuring :
    ```c
-      termistor_1.measureNTCResistance() // This method gets NTC's Reistance value with calculating voltage.
-      termistor_1.measureNTCResistance(10) // Sampled instance method.  
+      termistor_1.measureNTCResistance(); // This method gets NTC's Reistance value with calculating voltage.
+      termistor_1.measureNTCResistance(10); // Sampled instance method.  
    ```
    * Temperature Measuring :
    ```c
-      termistor_1.measureNTCTemperatureCelcius()   // NTC's Temperature's value calculates with 
+      termistor_1.measureNTCTemperatureCelcius();   // NTC's Temperature's value calculates with 
                                                    // voltage and resitance.
-      termistor_1.measureNTCTemperatureCelcius(10) // Sampled instance method.  
-      termistor_1.measureNTCTemperature() // Fahreneit version
+      termistor_1.measureNTCTemperatureCelcius(10); // Sampled instance method.  
+      termistor_1.measureNTCTemperature(); // Fahreneit version
    ```
    * NTC's pin connection status :
    ```c
