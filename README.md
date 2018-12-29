@@ -24,7 +24,7 @@ __Using:__
       termistor_1.setReferanceBetaConfidency(3900.0); // Can calculate with paper.
       termistor_1.setReferanceResistanceAt25C(2250.0); // Can find datasheet of NTC.
       termistor_1.setReferanceMaxVoltageOfADC(4.60); // ADC's supply voltage. Measure 5V pin.  
-      termistor_1.setReferanceMaxADC(1024.00); // ADC reding bit value. 
+      termistor_1.setReferanceMaxADC(1024.00); // ADC reading bit value. 
 ```
 * Measuring
    * Voltage Measuring :
