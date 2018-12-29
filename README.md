@@ -88,7 +88,7 @@ __Using:__
             Serial.println("------------------------------------------------");
       }
    ```
- * Depencies
+ * Dependencies
    * Statistic Libary https://github.com/yasinerduran/statistics
 
 
