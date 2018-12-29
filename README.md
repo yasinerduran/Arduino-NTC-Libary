@@ -10,10 +10,12 @@ __Connection Schematic:__
 
 __Using:__
 * Iclude Libary
+
 * Construct Object
 * Measuring
-       * Hello
-       
+       `#include "ArduinoNTCLibary.h"`
+       ```c++
+       ```
          
 
 
