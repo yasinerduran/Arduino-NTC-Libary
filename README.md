@@ -44,6 +44,15 @@ __Using:__
       termistor_1.measureNTCTemperatureCelcius(10) // Sampled instance method.  
       termistor_1.measureNTCTemperature() // Fahrenait version
    ```
+   * NTC's pin connection status :
+   ```c
+      if(termistor_1.getNTCStatus()){
+            // NTC Conected.
+      }
+      else{
+            // NTC Not Connected.
+      }
+   ```
            
          
 
