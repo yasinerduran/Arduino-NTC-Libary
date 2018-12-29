@@ -10,8 +10,8 @@ __Connection Schematic:__
 
 __Using:__
 * Import Libary
-`code()`
-```#include "ArduinoNTCLibary.h"
+`#include "ArduinoNTCLibary.h"`
+```c
 ```
 * Construct Object
 * Measuring
