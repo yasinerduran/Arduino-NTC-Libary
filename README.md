@@ -55,6 +55,7 @@ __Using:__
    ```
 * Example Code 
  ```c
+      // You can find this skech in path /examples/basicCalculation/basicCalculation.ino
       #include "ArduinoNTCLibary.h"
       NTC termistor_1 = NTC();
 
