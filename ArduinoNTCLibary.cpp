@@ -1,8 +1,16 @@
 #include "ArduinoNTCLibary.h"
 #include "math.h"
+#include "Statistics.h"
 
 NTC :: NTC(){
-    
+    last_temp = 0;
+}
+
+NTC :: NTC(bool is_queue_mode){
+    is_queue= is_queue_mode;
+    if(is_queue){
+
+    }
 }
 
 void NTC :: setNTCPin(int _pin){
@@ -12,8 +20,6 @@ void NTC :: setNTCPin(int _pin){
 
 
 //Pin of Probe Control
-
-
 bool NTC :: getNTCStatus(){
     double resistance = measureNTCResistance(3);
     if(resistance<5000.00){
@@ -69,7 +75,11 @@ float NTC :: getReferanceResistanceAt25C(){
 
 //
 float NTC :: measureNTCVoltage(){
-    float voltage = analogRead(ntc_pin);
+    float voltage = 0;
+    for(int i=0; i<10; i++){
+        voltage += analogRead(ntc_pin);
+    }
+    voltage = voltage / 10;
     voltage = (ref_max_voltage * voltage) / ref_max_adc;
     return voltage;
 }
@@ -85,11 +95,11 @@ float NTC :: measureNTCVoltage(int _count){
 
 //    
 float NTC :: measureNTCResistance(){
-    digitalWrite(adc_supply_output_pin,HIGH);
     float ntc_voltage = measureNTCVoltage();
     return ref_resistance * ( ntc_voltage / (ref_max_voltage - ntc_voltage));
-    
 }
+
+//
 float NTC :: measureNTCResistance(int _count){
     float summary = 0;
     for(int i =0; i < _count; i++){
@@ -107,24 +117,29 @@ float NTC :: measureNTCTemperature(){
 }
 
 float NTC :: measureNTCTemperature(int _count){
-    float summary = 0;
+    Statistics stats(_count);
     for(int i =0; i < _count; i++){
-        summary +=  measureNTCTemperature();
+          stats.addData(measureNTCTemperature());
     }
-    float mean = summary / _count;
-    return mean;
+    float data = stats.mod();
+    stats.reset();
+    return data;
 }
 
 //
 float NTC :: measureNTCTemperatureCelcius(){
-    return measureNTCTemperature() - 273.15f;
+    return measureNTCTemperature() - 273.15;
 }
 
 float NTC :: measureNTCTemperatureCelcius(int _count){
-    float summary = 0;
+    Statistics stats(_count);
     for(int i =0; i < _count; i++){
-        summary +=  measureNTCTemperature();
+          stats.addData(measureNTCTemperature());
     }
-    float mean = summary / _count;
-    return mean - 273.15f;
+    float data = stats.mod();
+    last_temp = data;
+    stats.reset();
+    return data - 273.15;
+    
+    
 }

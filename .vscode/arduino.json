@@ -1,7 +1,7 @@
 {
-    "board": "arduino:avr:mega",
-    "configuration": "cpu=atmega2560",
-    "port": "COM18",
-    "sketch": "examples\\fourProbeMeasuringForNextion\\fourProbeMeasuringForNextion.ino",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328old",
+    "port": "COM19",
+    "sketch": "examples\\basicCalculation\\basicCalculation.ino",
     "programmer": "AVR ISP"
 }

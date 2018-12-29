@@ -14,10 +14,16 @@ class NTC{
         
         int adc_supply_output_pin;
         int ntc_pin ;
-        int ntc_control_pin;
-        
+        int ntc_control_pin; 
+        float last_temp;
+        static NTC * temistor_list;
+        static bool is_queue ;
     public:
         NTC();
+        NTC(bool is_queue_mode);
+        //Set Queue Measuring Mode
+        void setQueueMeasuringMode(bool status);
+
         //Pin Outs and Inputs
         void setNTCPin(int _pin);
 
