@@ -12,6 +12,7 @@ __Using:__
 * Import Libary
 ```c
       #include "ArduinoNTCLibary.h"
+      // Firstly must check dependencies at the end of the page.
 ```
 * Construct Object
 ```c
