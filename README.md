@@ -26,7 +26,13 @@ __Using:__
       termistor_1.setReferanceMaxVoltageOfADC(4.60); // ADC's supply voltage. Measure 5V pin.  
       termistor_1.setReferanceMaxADC(1024.00); // ADC reding bit value. 
 ```
- 
+* Measuring
+   * Voltage Measuring :
+```c
+            termistor_1.measureNTCVoltage() // This method gets pin of input's voltage value.
+            termistor_1.measureNTCVoltage(10) // Sampled instance method.
+     
+```
            
          
 
