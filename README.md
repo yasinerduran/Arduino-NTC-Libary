@@ -42,12 +42,12 @@ __Using:__
       termistor_1.measureNTCTemperatureCelcius()   // NTC's Temperature's value calculates with 
                                                    // voltage and resitance.
       termistor_1.measureNTCTemperatureCelcius(10) // Sampled instance method.  
-      termistor_1.measureNTCTemperature() // Fahrenait version
+      termistor_1.measureNTCTemperature() // Fahreneit version
    ```
    * NTC's pin connection status :
    ```c
       if(termistor_1.getNTCStatus()){
-            // NTC Conected.
+            // NTC Connected.
       }
       else{
             // NTC Not Connected.
@@ -55,7 +55,7 @@ __Using:__
    ```
 * Example Code 
  ```c
-      // You can find this skech in path /examples/basicCalculation/basicCalculation.ino
+      // You can find this sketch in path /examples/basicCalculation/basicCalculation.ino
       #include "ArduinoNTCLibary.h"
       NTC termistor_1 = NTC();
 
