@@ -30,8 +30,8 @@ __Using:__
 * Measuring
    * Voltage Measuring :
    ```c
-      termistor_1.measureNTCVoltage() // This method gets pin of input's voltage value.
-      termistor_1.measureNTCVoltage(10) // Sampled instance method.  
+      termistor_1.measureNTCVoltage(); // This method gets pin of input's voltage value.
+      termistor_1.measureNTCVoltage(10); // Sampled instance method.  
    ```
    * Resistance Measuring :
    ```c
